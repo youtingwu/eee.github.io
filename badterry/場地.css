@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: solid 1px; */
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    background-color: #027353;
+}
+
+header{
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2E1D8;
+    
+}
+header img{
+    background-color: aliceblue;
+    
+width: 100px;
+height: 97px;
+}
+nav{padding-top: 36px;
+    
+    margin-top:7px;
+    padding-right: 20px;
+    
+}
+nav a{
+    font-size: 1.5em;
+color:#F05A28;
+padding: 10px;
+
+    text-align: center;
+text-decoration: none;
+font-weight: 700;
+
+}
+header a:hover{
+/* background-color:aliceblue; */
+color: #03A678;
+transition: 1s;
+font-size: 25px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.content{
+    width: 50%;
+    height: 800px;
+    overflow-y:scroll;
+}
+.cc{width: 50%;
+    overflow-y:scroll;
+}
+.right{
+   
+    width:100%;
+   
+   
+    
+}
+.left{
+   margin-left: 3%;
+    width:80%;
+    margin: 0 auto;
+    height: 1400px;
+    /* height: 50%; */
+}   
+.aa{
+    
+    width:90%;
+    height: 50%;
+} 
+.pp{
+    width: 100%;
+}
+.v {border: solid 5px black;
+    width:100%;
+   
+    position:relative;
+    margin-top: 3%;
+}
+.box{
+    /* position: relative;
+    top: 60px;
+    left: 10px; */
+    /* margin-left:15px ; */
+    margin-top: 10%;
+    margin-bottom: 25px;
+    width: 100%;
+    /* height: 150%; */
+    background-color: #F2E1D8;
+    border-radius: 40px;
+
+}
+
+.a{ width:20%;
+    /* height: 25px; */
+    display: block;
+    border:#F05A28 solid 3px;
+    color: #03A678;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    left:75%;
+    top:30px;
+    border-radius: 30px;
+}
+.imgg{position: relative;
+    width: 50px;
+    left: 10%;
+    bottom: 110px;
+    
+}
+.dropdown {
+    text-align: center;
+    padding: 5px;
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    background-color:#03A678;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+   
+        position: absolute;
+        left: -20%;
+      
+   
+  }
+ 
+  .map{
+   
+    width:50%;
+    
+    position: fixed;
+   top: 100%;
+     
+ 
+  }
+  /* .qu{
+    text-align: center;
+    position: relative;
+    left: 230px;
+    top:33px;
+    background-color: #F2E1D8;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  .qu:hover{
+    background-image: url(p2.png);
+  } */
+  .h{
+    color: #F2E1D8;
+  }
+  .maps{
+    /* position: fixed; */
+    /* margin: auto 0; */
+    /* position: relative; */
+    /* left: 100px;top:10px; */
+     width:100% ;
+     height:450px;
+     
+ 
+  }
+ .background{
+    width: 600px;
+    height: 400px;
+    position: relative;
+    left: 497px;
+ }
+ p{
+    position: relative;
+    bottom: -33px;
+    left: 20%;
+    text-align: center;
+ }
+h3{width: 40%;
+    position: relative;
+    bottom: -17px;
+    left: 20%;
+}
+.word{
+    /* border: solid 1px; */
+    width: 50%;
+}
+.boxs{
+    display: block;
+    text-align: center;
+    padding: 3px;
+    width: 10%;
+    position: relative;
+    bottom: 60px;
+    left: 80%;
+    border:#F05A28 solid 3px;
+    color: #03A678;
+    border-radius: 30px;
+    margin-right: 0;
+}
+.boxs:hover{
+    color: #F2E1D8;
+    
+    border:#03A678 solid 3px;
+    box-shadow: inset 200px 0 0 0 #03A678;
+    transition: 1s;
+    
+}
+.a:hover{
+    color: #F2E1D8;
+    
+    border:#03A678 solid 3px;
+    box-shadow: inset 200px 0 0 0 #03A678;
+    transition: 1s;
+    
+}
+@media (max-width:700px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .content{
+        width: 100%;
+    }
+    .cc{
+        width: 100%;
+    }
+    .left{
+        width: 90%;
+        height: 500px;
+    }
+    .content{
+        width: 100%;
+    }
+    .v{
+        position: relative;
+        width: 100%;
+       
+    }
+}
+@media (max-width:540px){
+    nav a{
+        font-size: 1em;
+    }
+    header{
+        flex-wrap: wrap;
+        height: 30%;
+    }
+    .img{
+        height: 40px;
+    }
+    nav{
+        width: 100%;
+        text-align: center;
+    }
+    .left{
+        
+        height: 500px;
+    }
+}
+
+

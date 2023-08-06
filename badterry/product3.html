@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product3.css">
+    <title>商品</title>
+</head>
+<body>
+   
+    <div class="all">
+        <header>
+        
+            <div class="img"><img src="鴨嘴獸.png" style="background-color: #F2E1D8;"></div>
+            <nav class="nav">
+                
+                    <a href="主頁.html">主頁</a>
+                    <a href="基礎知識.html">基礎知識</a>
+                    <a href="teach.html">教學</a>
+                    <a href="場地.html">場地</a>
+                    <a href="ball.html">裝備</a>
+            </nav>
+            
+        </header>
+
+        <input type ="button" onclick="history.go(-1)" value="<<回到羽毛球拍"></input>
+        
+        <div class="container">
+            <div class="item-picture" >
+                <img src="yonex.png" id="picture"style="width:30%;
+              ;">
+            </div>
+            <div class="evaluate">
+                <div class="box-1" id="brand">exthree</div>
+                <div class="box-3" id="kind">cici</div>
+                <div class="box-3" id="material">cici</div>
+                <div class="box-3" id="quantity">cici</div>
+                <div class="box-3" id="money">cici</div>
+                <a class="box-4" id="link">購買連結</a>
+                <hr style="position: relative;left: 15px;width:100%;">
+                <div class="box-3" id="evaluate">介紹:</div>
+                <div class="box-2" id="content">cici</div>
+            </div>
+        </div>
+
+    <script>
+
+    
+    
+    
+    
+    
+            
+                // var evaluate=document.getElementById('evaluate');
+                // var brand=document.getElementById('brand');
+                // var click1=document.getElementsByClassName('click1');
+    
+                // click1.onclick=function(){
+                    
+                //     window.open ('ball.html')
+                  
+                
+                   
+                // }
+                
+    
+    
+    
+    //             var urlParams = new URLSearchParams(window.location.search);
+    // var message = urlParams.get('message');
+    // console.log(message); // 輸出：你好，世界！
+    var item = document.getElementsByClassName('item');
+    var brand=document.getElementById('brand');
+    var picture = document.getElementById('picture');
+    var kind=document.getElementById('kind');
+    var material=document.getElementById('material');
+    var quantity=document.getElementById('quantity');
+    var money=document.getElementById('money');
+    var link=document.getElementById('link');
+    var content=document.getElementById('content');
+    document.addEventListener("DOMContentLoaded",(event)=>{
+        let urlparams=new URLSearchParams(window.location.search);
+        let _id= urlparams.get('id')
+    
+       
+        if (_id=='12') {
+            picture.src=src="p12.png";
+            brand.innerHTML="YONEX";
+            kind.innerHTML="NANOFLARE JUNIOR";
+            
+            material.innerHTML="材質:碳素拍框+納米分子NEO+高彈性碳素";
+            quantity.innerHTML="數量:1 / 支";
+            money.innerHTML="＄2100";
+            link.href="https://www.yonex.com.tw/product/d/NANOFLARE%20JUNIOR/2057";
+            content.innerHTML="長度約為665mm，比一般球拍短10mm 適合110-140公分國小學童(約小三以下)使用";
+            
+        }
+        if (_id=='13') {
+            picture.src=src="p13 (2).png";
+            brand.innerHTML="YONEX";
+            kind.innerHTML="MUSCLE POWER 2";
+            
+            material.innerHTML="材質:鋁、鋼";
+            quantity.innerHTML="數量:1 / 支";
+            money.innerHTML="＄800";
+            link.href="https://yonexshop.tw/item/detail/1_1_21MP2GE_1/207";
+            content.innerHTML="JR 短小的球拍，輕鬆的操控適合6歲以下兒童使用";
+            
+        }
+        if (_id=='14') {
+            document.getElementById('brand').style.fontSize="8vw";
+            picture.src=src="p14.png";
+            brand.innerHTML="DECATHLON";
+            
+            kind.innerHTML="成人款中階羽球拍 BR 560";
+            
+            material.innerHTML="材質:<br>拍框 100% 碳纖維 <br>球拍握柄 60% 木頭, 40% 聚氨酯纖維 （PU） <br>球拍中管 100% 碳纖維";
+            quantity.innerHTML="數量:1 / 支";
+            money.innerHTML="＄999";
+            link.href="https://decathlon.tw/dsm-331175.html?___from_store=zh&gclid=CjwKCAjwlJimBhAsEiwA1hrp5kTCfy8NH1Q-ZUzh6xkheKuC5Skv5aUHun0hDPXjyWzTbONfFQyvshoCLKYQAvD_BwE";
+            content.innerHTML="握感佳，女孩子用起來也不費力";
+            
+        }
+        brand.innerHTML.style.fontSise="10"
+    }
+    
+    )
+    </script>
+    </body>
+    </html>
+    

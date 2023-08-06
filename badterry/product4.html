@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product4.css">
+    <title>商品</title>
+</head>
+<body>
+   
+    <div class="all">
+        <header>
+        
+            <div class="img"><img src="鴨嘴獸.png" style="background-color: #F2E1D8;"></div>
+            <nav class="nav">
+                
+                    <a href="主頁.html">主頁</a>
+                    <a href="基礎知識.html">基礎知識</a>
+                    <a href="teach.html">教學</a>
+                    <a href="場地.html">場地</a>
+                    <a href="ball.html">裝備</a>
+            </nav>
+            
+        </header>
+
+        <input type ="button" onclick="history.go(-1)" value="<<回到羽毛球"></input>
+        
+        <div class="container">
+            <div class="item-picture" >
+                <img src="yonex.png" id="picture"style="width: 50%;
+                height: 100%;">
+            </div>
+            <div class="evaluate">
+                <div class="box-1" id="brand">exthree</div>
+                <div class="box-3" id="kind">cici</div>
+                <div class="box-3" id="material">cici</div>
+                <div class="box-3" id="quantity">cici</div>
+                <div class="box-3" id="money">cici</div>
+                <a class="box-4" id="link">購買連結</a>
+                <hr style="position: relative;left: 15px;width:90%;">
+                <div class="box-3" id="evaluate">評價:</div>
+                <div class="box-2" id="content">cici</div>
+            </div>
+        </div>
+
+    <script>
+
+    
+    
+    
+    
+    
+            
+                // var evaluate=document.getElementById('evaluate');
+                // var brand=document.getElementById('brand');
+                // var click1=document.getElementsByClassName('click1');
+    
+                // click1.onclick=function(){
+                    
+                //     window.open ('ball.html')
+                  
+                
+                   
+                // }
+                
+    
+    
+    
+    //             var urlParams = new URLSearchParams(window.location.search);
+    // var message = urlParams.get('message');
+    // console.log(message); // 輸出：你好，世界！
+    var item = document.getElementsByClassName('item');
+    var brand=document.getElementById('brand');
+    var picture = document.getElementById('picture');
+    var kind=document.getElementById('kind');
+    var material=document.getElementById('material');
+    var quantity=document.getElementById('quantity');
+    var money=document.getElementById('money');
+    var link=document.getElementById('link');
+    var content=document.getElementById('content');
+    
+    document.addEventListener("DOMContentLoaded",(event)=>{
+        let urlparams=new URLSearchParams(window.location.search);
+        let _id= urlparams.get('id')
+    
+       
+        if (_id=='15') {
+            picture.src=src="p15.png";
+            brand.innerHTML="YONEX";
+            kind.innerHTML="MAVIS 250";
+            material.innerHTML="材質:尼龍";
+            quantity.innerHTML="數量:6顆入 / 筒";
+            money.innerHTML="＄400";
+            link.href="https://www.yonex.com.tw/product/d/MAVIS%20250/2103";
+            content.innerHTML="飛行快，彈性大，耐打，做工品質好";
+            
+        }
+        if (_id=='16') {
+            document.getElementById('brand').style.fontSize="8vw";
+            picture.src=src="P16 (3).png";
+            brand.innerHTML="DECATHLON";
+            kind.innerHTML="入門款塑膠羽毛球 (6入)";
+            
+            material.innerHTML="材質:<br>腳背 - 提花 100% 乙烯醋酸乙烯共聚物（EVA） 腳背 - 管狀 100% 聚醯胺纖維";
+            quantity.innerHTML="數量:6顆入 / 筒";
+            money.innerHTML="＄199";
+            link.href="https://decathlon.tw/dsm-7281.html?gclid=CjwKCAjw8ZKmBhArEiwAspcJ7iV9_H81jJ-fJL3fk8D5XciiLaI9Uoi0wBsD-dndWiLRFAZXnfSq8BoCom8QAvD_BwE";
+            content.innerHTML="入門首選，重複使用，陪養跟孩子一起玩的樂趣<br>適合不常打球的休閒玩家或羽球初學者使用不僅物廉價美，還堅固耐用！";
+            
+            
+        }
+        if (_id=='17') {
+            document.getElementById('brand').style.fontSize="8vw";
+            picture.src=src="p17 (2).png";
+            brand.innerHTML="DECATHLON";
+            kind.innerHTML="初階休閒用羽毛球 FSC100 (12入)";
+           
+            material.innerHTML="材質:<br>腳背 - 提花 50% 乙烯醋酸乙烯共聚物（EVA）, 50% 軟木 腳背 - 管狀 100% 鴨羽";
+            quantity.innerHTML="數量:12顆入 / 筒";
+            money.innerHTML="＄229";
+            link.href="https://decathlon.tw/dsm-138925.html?gclid=CjwKCAjw8ZKmBhArEiwAspcJ7nO3ipShvhzqld3emFkJEyLTW1MMeMJjer6Gt1iUU0uhVX76Q32KSxoCSnQQAvD_BwE";
+            content.innerHTML="初學者的好球，稍微會打之後就建議可以買好一點的<br>這款羽球適合想要有舒適擊球感的初學者！打起來非常舒適－實惠的價格！";
+            
+        }
+        if (_id=='18') {
+            picture.src=src="p18.png";
+            brand.innerHTML="VICTOR";
+            kind.innerHTML="CHAMPION B-01";
+           
+            material.innerHTML="材質:鵝毛";
+            quantity.innerHTML="數量:12顆入 / 筒";
+            money.innerHTML="＄540";
+            link.href="https://www.victorsport.com.tw/product/29680/CHAMPION-B-01N";
+            content.innerHTML="適合更高階的球友";
+            
+        }
+        if (_id=='19') {
+            picture.src=src="p19.png";
+            brand.innerHTML="EXTHREE";
+            kind.innerHTML="X-250";
+            
+            material.innerHTML="材質:鴨毛";
+            quantity.innerHTML="數量:12顆入 / 筒";
+            money.innerHTML="＄450";
+            link.href="";
+            content.innerHTML="飛行穩定度高，平時比賽用很夠";
+            
+        }
+    }
+    
+    )
+    </script>
+    </body>
+    </html>
+    

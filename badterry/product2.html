@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product2.css">
+    <title>商品</title>
+</head>
+<body>
+   
+    <div class="all">
+        <header>
+        
+            <div class="img"><img src="鴨嘴獸.png" style="background-color: #F2E1D8;"></div>
+            <nav class="nav">
+                
+                    <a href="主頁.html">主頁</a>
+                    <a href="基礎知識.html">基礎知識</a>
+                    <a href="teach.html">教學</a>
+                    
+                    
+                    <a href="場地.html">場地</a>
+                    <a href="ball.html">裝備</a>
+            </nav>
+            
+        </header>
+        <input type ="button" onclick="history.go(-1)" value="<<回到羽毛球衣"></input>
+        <div class="container">
+            <div class="item-picture" >
+                <img src="yonex.png" id="picture"style="width: 70%;
+                ">
+            </div>
+            <div class="evaluate">
+                <div class="box-1" id="brand">exthree</div>
+                <div class="box-3" id="kind">cici</div>
+                <div class="box-3" id="material">cici</div>
+                <div class="box-3" id="quantity">cici</div>
+                <div class="box-3" id="money">cici</div>
+                <a class="box-4" id="link">購買連結</a>
+                <hr style="position: relative;left: 15px;width:100%;">
+                <div class="box-3" id="evaluate">介紹:</div>
+                <div class="box-2" id="content">cici</div>
+            </div>
+        </div>
+        <div class="container-2">
+            <div class="item-1">
+                <img src="victor.png"class="item"style="width: 100%;
+                height: 100%;">
+            </div>
+            <div class="item-1">
+                <img src="topic1.png"class="item"style="width: 100%;
+                height: 100%;">
+            </div>
+            <div class="item-1">
+                <img src="yonex.png" class="item"style="width: 100%;
+                height: 100%;">
+            </div>
+        </div>
+    <script>
+        var picture = document.getElementById('picture');
+        var item = document.getElementsByClassName('item');
+    
+            item[0].onclick=function(){
+                picture.src=item[0].src;
+            }
+            item[1].onclick=function(){
+                picture.src=item[1].src;
+            }
+            item[2].onclick=function(){
+                picture.src=item[2].src;
+            }
+    
+    
+    
+    
+    
+            
+                // var evaluate=document.getElementById('evaluate');
+                // var brand=document.getElementById('brand');
+                // var click1=document.getElementsByClassName('click1');
+    
+                // click1.onclick=function(){
+                    
+                //     window.open ('ball.html')
+                  
+                
+                   
+                // }
+                
+    
+    
+    
+    //             var urlParams = new URLSearchParams(window.location.search);
+    // var message = urlParams.get('message');
+    // console.log(message); // 輸出：你好，世界！
+    var item = document.getElementsByClassName('item');
+    var brand=document.getElementById('brand');
+    var picture = document.getElementById('picture');
+    var kind=document.getElementById('kind');
+    
+    var material=document.getElementById('material');
+    var quantity=document.getElementById('quantity');
+    var money=document.getElementById('money');
+    var link=document.getElementById('link');
+    var content=document.getElementById('content');
+    document.addEventListener("DOMContentLoaded",(event)=>{
+        let urlparams=new URLSearchParams(window.location.search);
+        let _id= urlparams.get('id')
+    
+        if (_id=='9') {
+            picture.src=src="p7.png";
+            brand.innerHTML="VICTQR";
+            kind.innerHTML="T-30012 C";
+            
+            material.innerHTML="材質:93.4% 聚酯纖維 + 6.6% 彈性纖維";
+            quantity.innerHTML="數量:1 / 件";
+            money.innerHTML="＄1480";
+            link.href="https://www.victorsport.com.tw/product/99083/t-30012-c";
+            content.innerHTML="VICTOR Perfect-DRY纖維表面的微細溝槽產生的毛細現象，將肌膚表面的汗水經由芯吸、擴散、傳輸、迅速吸收發散，使織物快乾；同時排出身體的熱氣，吸收外面的冷空氣，使肌膚保持乾爽。不論您從事任何運動，穿Perfect-DRY纖維讓您揮別酷熱、悶濕，感受涼爽與舒適。";
+            item[0].src=src="p8.png";
+            item[1].src=src="p7.png";
+            item[2].src=src="背景.png";
+        }
+        if (_id=='10') {
+            picture.src=src="p9.png";
+            brand.innerHTML="EXTHREE";
+            kind.innerHTML="T-11071";
+            money.innerHTML="＄1050";
+            item[0].src=src="p10.png";
+            item[1].src=src="p9.png";
+            item[2].src=src="背景.png";
+        }
+        if (_id=='11') {
+            picture.src=src="p11.png";
+            brand.innerHTML="YONEX";
+            kind.innerHTML="YOBT3004TR";
+            
+            material.innerHTML="材質:100%聚酯纖維";
+            quantity.innerHTML="數量:1 / 件";
+            money.innerHTML="＄960";
+            link.href=" https://yonexshop.tw/item/detail/1_1_YOBT3004TR_1/007";
+            content.innerHTML="【2023 YONEX 台北羽球公開賽】紀念T恤";
+            item[0].src=src="p11.png";
+            item[1].src=src="背景.png";
+            item[2].src=src="背景.png";
+        }
+       
+    }
+    
+    )
+    </script>
+    </body>
+    </html>
+    
